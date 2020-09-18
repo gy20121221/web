@@ -1,0 +1,326 @@
+a{
+    text-decoration: none;
+    color: #b0b0b0;
+    display: block;/*让li的其他区域也可以点的到*/
+}
+a:hover{
+    color: rgb(254,106,0);
+}
+.navi{
+    width: 100%;
+    min-width: 1226px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #b0b0b0;
+    background-color: rgb(51,51,51);
+}
+.navi-m{
+    height: 40px;
+    width: 1226px;
+    margin: 0 auto;
+
+}
+.navi-m a:hover{
+    color: white;
+}
+.navi-l{
+    min-width: 770px;
+    height: 40px;
+    float: left;
+}
+.navi-l li{
+    float: left;
+}
+.navi-r{
+    width: 260px;
+    height: 40px;
+    float: right;
+}
+.navi-r li{
+    float: left;
+}
+.sp{
+    float: left;
+    font-size: 8px;
+    margin: 0 3.6px;
+}
+.buy-m{
+    display: inline-block;
+    background-color: #424242;
+    width: 120px;
+    height: 40px;
+    margin-left: 15px;
+    text-align: center;
+}
+.navi-menu{
+    display: none;
+    width: 276px;
+    height: 57px;
+    text-align: center;
+    position: relative;
+    left: -151.5px;
+    z-index: 10;
+}
+.buy-m:hover a{
+    color: rgb(254,106,0);
+    background-color: white;
+}
+.buy-m:hover .navi-menu{
+    display: block;
+}
+.head-a{
+    width: 1226px;
+    height: 100px;
+    margin: 0 auto;
+}
+.head-a-m{
+    width: 1226px;
+    height: 100px;
+}
+.head-a-logo .logo{
+    height: 55px;
+    width: 55px;
+    float: left;
+    margin-top: 25px;
+    position: relative;
+    overflow: hidden;
+}
+.head-a-logo .logo a{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 0;
+    background-color: #FF6700;
+    background-image: url("../img/xiaomi/4.png");
+    background-position: center;
+    transition: left 0.3s;
+}
+.head-a-logo .logo .home{
+    background-image: url("../img/xiaomi/5.png");
+    left: -55px;
+}
+.head-a-logo .logo:hover .mi{
+    left: 55px;
+}
+.head-a-logo .logo:hover .home{
+    left: 0;
+}
+
+.ko{
+    min-width: 202px;
+    height: 100px;
+    display: inline-block;
+}
+.head-a-m ul{
+    float: left;
+}
+.head-a-m li{
+    height: 100px;
+    line-height: 100px;
+    float: left;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.head-a-m a{
+    color: black;
+}
+.head-a-m a:hover{
+    color: rgb(254,106,0);
+}
+.body-m{
+    height: 460px;
+    width: 1226px;
+    margin: 0 auto;
+    z-index: 10;
+}
+.body-lab{
+    width: 234px;
+    height: 420px;
+    font-size: 16px;
+    float: left;
+    padding: 20px 0;
+    background-color: rgba(105,101,101,0.6);
+}
+.body-lab-m li{
+    height: 42px;
+    line-height: 42px;
+    display: block;
+    padding-left: 20px;
+}
+.body-lab i{
+    float: right;
+    display: inline-block;
+    position: relative;
+    left: -30px;
+}
+.body-lab-m a{
+    color: white;
+}
+.body-lab-m li:hover{
+    background-color:  rgb(254,106,0);
+}
+.body-img{
+    background-image: url("../img/xiaomi/2.png");
+    width: 1226px;
+    height: 460px;
+    background-position: center;
+    background-size: auto 460px;
+}
+/*设置二维码*/
+.QR-m .QR{
+    /*display: none;*/
+    position: absolute;
+    left: -30px;
+    width: 124px;
+    height: 0;
+    overflow: hidden;/*裁剪溢出元素*/
+    line-height: 1px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgb(51,51,51);
+    z-index: 10;
+    transition: height 1s;/*过度效果*/
+}
+.QR-m:hover .QR{
+     height: 148px;
+ }
+.QR-m{
+    position: relative;
+}
+.QR span{
+    font-size: 14px;
+    color: black;
+}
+.QR img{
+    margin:17px;
+}
+.search{
+    width: 296px;
+    height: 50px;
+    float: right;
+    margin-top: 25px;
+    border: 1px solid rgb(224,224,224);
+}
+.search .search-in{
+    width: 224px;
+    height: 50px;
+    float: left;
+    padding: 0 10px;
+    border: none;
+}
+/*获取焦点后的样式*/
+.search .search-in:focus,
+.search .search-in:focus+.search-bt{
+    outline: 1px solid #ff6700;
+
+}
+.search .search-bt{
+    float: left;
+    height: 50px;
+    width: 52px;
+    padding: 0;
+    border: 0;
+    background-color: #ffffff;
+    color: #616161;
+    border-left: 1px solid rgb(224,224,224);
+}
+.search .search-bt:hover{
+    background-color: #ff6700;
+    color: #ffffff;
+    border: 0;
+}
+/*设置小窗口，定位的应用*/
+/*布局的等式
+left + margin-left + width + margin-right + right =视口的宽度
+*/
+.wind{
+    width: 26px;
+    height: 206px;
+    background-color: #3F3F3F;
+    position: fixed;
+    bottom: 60px;
+    right: 50%;
+    margin-right: -639px;
+    z-index: 100;
+}
+.body-b{
+    width: 1226px;
+    height: 170px;
+    margin: 14px auto;
+    font-size: 12px;
+}
+.body-b-lab{
+    background-color: #5F5750;
+    width: 234px;
+    height: 170px;
+    float: left;
+    text-align: center;
+}
+.body-b-lab a{
+    color: #cfccca;
+    display: block;
+    height: 45px;
+}
+.body-b-lab a:hover{
+    color: #ffffff;
+}
+.body-b-lab ul{
+    display: block;
+    width: 234px;
+    height: 170px;
+    padding: 3px;
+}
+.body-b-lab li{
+    width: 70px;
+    height: 64px;
+    line-height: 18px;
+    padding: 18px 3px 0 3px;
+    float: left;
+    position: relative;
+}
+/*设置小图标的上划线*/
+.body-b-lab li::before{
+    content: '';
+    position: absolute;
+    width: 64px;
+    height: 1px;
+    background-color: #665e57;
+    left: 0;
+    right: 0;/*左右居中，把左右重置，再margin居中*/
+    top: 0;
+    margin: 0 auto;/*后面一段代码是为了设置居中*/
+}
+/*设置小图标的左划线*/
+.body-b-lab li::after{
+    content: '';
+    height: 70px;
+    width: 1px;
+    background-color: #665e57;
+    position: absolute;
+    top: 0;
+    bottom: 0;/*垂直居中，把上下重置，再margin居中*/
+    left: 0;
+    margin: auto 0;/*后面一段代码是为了设置居中*/
+}
+.body-b-lab img{
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin: 0 23px 4px 23px;
+}
+.body-b-r{
+    width: 992px;
+    height: 170px;
+    float: left;
+}
+.body-b-r li{
+    width: 316px;
+    margin-left: 14.6px;
+    float: left;
+}
+.body-b-r img{
+    width: 100%;
+}
+

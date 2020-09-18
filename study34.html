@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹性盒其他样式 弹性元素样式</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        ul{
+            width: 800px;
+            border: 2px solid red;
+            display: flex;
+            margin: 100px auto 0;
+        }
+        li{
+            width: 100px;
+            height: 100px;
+            flex-grow: 1;
+            background-color: #ef475d;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+        }
+        li:nth-child(2){
+            background-color: #999999;
+        }
+        li:nth-child(3){
+            background-color: #B03A2E;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+</body>
+</html>
+
+<!--/* flex-direction: column; */
+flex-wrap:
+设置弹性元素是否在弹性容器中自动换行
+可选值:
+nowrap默认值，元素不会自动换行
+wrap元素沿着辅轴方向自动换行
+wrap reverse元素沿着辅轴反方向换行
+*/
+
+
+/* flex-wrap: wrap-reverse; */
+/* flex-flow:
+wrap和direction 的简写属性*/
+/* flex-flow: row wrap; */
+
+
+justify- content
+如何分配主轴。上的空白空间(主轴上的元素如何排列)
+可选值:
+flex-start元素沿着主轴起边排列
+flex-end元素沿着主轴终边排列
+center元素居中排列
+space-around空白分布到元素两侧
+space-evenly空白分布到元素的单侧
+space-between空白分布到元素的之间
+
+align- items:
+元素在辅轴上如何对齐
+元素间的关系
+可选值:
+stretch默认值，将元素的长度设置为相同的值
+flex-start元素不会拉伸，沿着辅轴起边对齐
+
+-->
+
+<!--
+flex-basis指定的是元素在主轴上的基础长度
+如果主轴是横向的则该值指定的就是元素的宽度
+如果主轴是纵向的则该值指定的是就是元素的高度
+默认值是auto;
+表示参考元素自身的高度或宽度
+如果传递了一个具体的数值，则以该值为准
+
+
+flex可以设置弹性元素所有的三个样式
+flex 增长缩减基础;
+initial "flex: 0 1 auto".
+auto "flex: 1 1 auto"
+none "flex: 0 0 auto" 弹性元素没有弹性
+-->

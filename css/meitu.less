@@ -1,0 +1,124 @@
+a{
+    text-decoration: none;
+    color: white;
+    &:hover{
+      color: rgb(197, 196, 196);
+    }
+}
+.navi{
+    // position: relative;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 14px;
+  background-color: #000;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.navi-l-menu{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  margin-top: 48px;
+  padding-top: 50px;
+  li{
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #757474;
+    a{
+      line-height: 44px;
+      display: block;
+      font-size: 14px;
+    }
+    &:last-child a{
+      display: inline-block;
+      margin-right: 8px;
+    }
+    span{
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+}
+.navi-l{
+  &:hover{
+    .navi-l-menu{
+      display: block;
+    }
+  }
+  .navi-l-ul{
+     width: 18px;
+     height: 48px;
+     position: relative;
+     li{
+       width: 18px;
+       height: 1px;
+       background-color: #fff;
+       position: absolute;
+       transform-origin:left center;
+       transition: 0.5s;
+     }
+     li:nth-child(1){
+       top:18px;
+     }
+     li:nth-child(2){
+       top:24px;
+     }
+     li:nth-child(3){
+       top:30px;
+     }
+     &:hover{
+       li:nth-child(1){
+         top:18px;
+         transform: rotateZ(40deg);
+       }
+       li:nth-child(2){
+         top:24px;
+         opacity: 0;//变成透明,隐藏
+       }
+       li:nth-child(3){
+         top:30px;
+         transform: rotateZ(-40deg);
+       }
+     }
+   }
+}
+@media only screen {
+  @media (min-width: 768px) {
+    .logo{
+      order: 1;
+    }
+    .navi-r{
+      order: 3;
+    }
+    .navi-l{
+      height: 0;
+      order: 2;
+      border: 0;
+      flex: auto;
+      .navi-l-ul li{
+        display: none;
+      }
+      .navi-l-menu{
+        display: flex;
+        position: static;
+        padding: 0;
+        margin: 0;
+        li{
+        width: auto;
+        border-bottom: none;
+          a{
+            line-height: 48px;
+          }
+          span{
+            display: none;
+          }
+      }
+      }
+    }
+  }
+}

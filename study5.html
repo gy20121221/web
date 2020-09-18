@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签导航</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"><!--去除浏览器默认样式1-->
+    <style>
+        body{
+            background-color: #dddddd;
+        }
+        .menu{
+            width: 190px;
+            height: 75px;
+            background-color: white;
+            margin: 50px auto;
+        }
+        .menuli{
+            height: 25px;
+            line-height: 25px;
+            padding-left: 18px;
+        }
+        .menuli:hover{
+            background-color: #d9d9d9;
+        }/*鼠标移到时显示*/
+
+        .menu a{
+            font-size: 14px;
+            color:#333;
+            text-decoration: none;
+        }
+        .menu a:hover{
+            color: #ef475d;
+        }
+        .menuli span{
+            font-size: 12px;
+            padding: 0 2px;
+        }/*span设置了左右内边距*/
+    </style>
+</head>
+<body>
+<div class="menu">
+    <ul>
+        <li class="menuli">
+            <a target="_blank" href="https://www.jd.com/">家用电器</a>
+        </li>
+        <li class="menuli">
+            <a target="_blank" href="https://www.jd.com/">手机</a>
+            <span>/</span>
+            <a target="_blank" href="https://www.jd.com/">运营商</a>
+            <span>/</span>
+            <a target="_blank" href="https://www.jd.com/">数码</a>
+        </li>
+        <li class="menuli">
+            <a target="_blank" href="https://www.jd.com/">电脑</a>
+            <span>/</span>
+            <a target="_blank" href="https://www.jd.com/">办公</a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

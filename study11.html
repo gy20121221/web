@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>外边距重叠问题</title>
+    <style>
+        .box1{
+            background-color: #1abc9c;
+            width: 200px;
+            height: 200px;
+        }
+       /*.box1::before{
+           content: '';
+           display: table;
+       }!*解决外边距重叠*!*/
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: #FF6347;
+            margin-top: 100px;
+        }
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }/*经典的 解决高度塌陷和边距重叠问题*/
+    </style>
+</head>
+<body>
+<div class="box1 clearfix">
+    <div class="box2"></div>
+</div>
+</body>
+</html>

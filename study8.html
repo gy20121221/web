@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>导航条</title>
+    <style>
+        .menu{
+            width: 1210px;
+            height: 48px;
+            background-color: #E8E7E3;
+            margin: 50px auto;
+        }
+        .menu li{
+            float: left;
+            height: 48px;
+            line-height: 48px; /*line-height设置成与height一样可以实现垂直居中  */
+        }
+        .menu a{
+            display: block;
+            text-decoration: none;/*去除下划线*/
+            color: rgba(52, 51, 51,0.6);
+            font-size: 18px;
+            padding: 0 39px;
+        }
+        .menu a:hover{
+            background-color: #3F3F3F;
+            color: #E8E7E3;
+        }
+        .menu li:last-child a{
+            padding: 0 42px 0 41px;
+        }
+    /*    最后一个有缺陷 只能单独解决*/
+    </style>
+</head>
+<body>
+<div class="menu">
+    <ul>
+        <li><a href="https://www.w3school.com.cn/h.asp">HTML/CSS</a></li>
+        <li><a href="https://www.w3school.com.cn/b.asp">Browser Side</a></li>
+        <li><a href="https://www.w3school.com.cn/s.asp">Server Side</a></li>
+        <li><a href="https://www.w3school.com.cn/p.asp">Programming</a></li>
+        <li><a href="https://www.w3school.com.cn/x.asp">XML</a></li>
+        <li><a href="https://www.w3school.com.cn/w.asp">Web Building</a></li>
+        <li><a href="https://www.w3school.com.cn/r.asp">Reference</a></li>
+    </ul>
+</div>
+</body>
+</html>

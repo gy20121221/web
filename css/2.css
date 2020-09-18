@@ -1,0 +1,28 @@
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
+.box1 > .box2 {
+  color: palevioletred;
+}
+.box1:hover {
+  background-color: red ;
+}
+.p1,
+.p2 {
+  width: 200px;
+  height: 200px;
+}
+.p2 {
+  color: red;
+}
+.p3 {
+  width: 200px;
+  height: 200px;
+}
+.p5 {
+  width: 200px;
+  height: 200px;
+  background-color: salmon;
+}

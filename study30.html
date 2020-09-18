@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>less 变量</title>
+    <style>
+        html{
+            --color1: #ef475d;
+            --h: 200px;
+        }
+        .box1{
+            width: 200px;
+            height: var(--h);
+            background-color: var(--color1);
+        }
+        .box2{
+            width: 200px;
+            height: var(--h);
+            color: var(--color1);
+        }
+        .box3{
+            width: 200px;
+            height: var(--h);
+            border: 1px solid var(--color1);
+        }
+    </style>
+</head>
+<body>
+<div class="box1">hello</div>
+<div class="box2">hello</div>
+<div class="box3">hello</div>
+</body>
+</html>

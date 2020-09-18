@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>媒体查询</title>
+    <style>
+        @media screen {
+            body{
+                background-color: #ef475d;
+            }
+        }
+        @media (width: 500px) {
+            body{
+                background-color: #B03A2E;
+            }
+        }
+        @media (max-width: 500px) {
+            body{
+                background-color: black;
+            }
+        }
+        @media (min-width: 500px) and (max-width: 768px){
+            body{
+                background-color: #999999;
+            }
+        }
+    </style>
+</head>
+<body>
+
+</body>
+</html>
+
+
+<!--
+响应式布局
+网页可以根据不通的设备或窗口大小呈现出不同的效果
+使用响应式布局，可以使一个网页适用于所有设备
+响应布局的关键就是媒体查询
+通过媒体查询，可以为不通的设备，或设备不同状态来分别设置样式
+-->
+
+<!--
+使用媒体查询
+语法: @media 查询规则{}
+媒体类型:
+all所有设备
+print打印设备
+screen带屏幕的设备
+speech屏幕阅读器
+可以使用,连接多个媒体类型，这样它们之间就是一个或的关系
+-->
+
+<!--
+媒体特性:
+width视口的宽度
+height视口的高度
+
+
+min-width视口的最小宽度(视口大于指定宽度时生效)
+max-width视口的最大宽度(视口小于指定宽度时生效)
+
+
+-->
+
+<!--
+样式切换的分界点，我们称其为断点，也就是网页的样式会在这个点时发生变化
+-般比较常用的断点
+小于768超小屏幕 max-width=768px
+大于768小屏幕 min-width= 768px
+大于992中型屏幕 min-width=992px
+大于1200大屏幕 min-width=1208px
+-->

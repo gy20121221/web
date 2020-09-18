@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">  <!防止乱码>
+</head>
+<body>
+<form action="MAILTO:1628590697@qq.com" method="post" enctype="text/plain">
+
+<h3>这个表单会把电子邮件发送到asot。</h3>
+姓名：<br />
+<input type="text" name="name" value="aost" readonly size="20" required>
+<br /><label>年龄:<br>
+        <input type="number" name="age" min="1" max="200" step="1"></label><br>
+<label>性别：<br>
+    <select name="sex">
+        <option value="boy">男</option>
+        <option value="gail">女</option>
+    </select><br>
+</label>
+<label>电邮：<br />
+<input type="email" name="mail"  size="20"></label>
+<br />
+<label>内容：<br />
+<input type="password" name="comment"  size="20"></label>
+    <br> <LABEL>
+    <INPUT TYPE="radio" NAME="sex" value="BOY">不重要</LABEL>
+    <label>
+        <input type="radio" name="sex" value="gail">重要</label>
+<br /><br />
+    <label>
+        <input type="image" src="https://iconfont.alicdn.com/t/ffc2463f-a0bd-4c80-83b7-1bd80dcc59d8.svg" height="32px" width="32px">
+    </label><br>
+    <label>请选择你需要上传的文件：
+        <input type="file" name="file" accept="text/*">
+    </label><br><br>
+    <textarea name="say" rows="5" cols="30">请输入使用体验</textarea><br><br>
+
+<input type="submit" value="发送">
+<input type="reset" value="重置">
+
+</form>
+</body>
+</html>

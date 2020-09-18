@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹性盒</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        ul{
+            width: 800px;
+            border: 2px solid red;
+            display: flex;
+        }
+        li{
+            width: 100px;
+            height: 100px;
+            flex-grow: 1;
+            background-color: #ef475d;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+        }
+        li:nth-child(2){
+            background-color: #999999;
+        }
+        li:nth-child(3){
+            background-color: #B03A2E;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+</body>
+</html>
+
+<!--
+flex(弹性盒、伸缩盒)
+是CSs中的又一种布局手段，它主要用来代替浮动来完成页面的布局
+flex可以使元素具有弹性，让元素可以跟随页面的大小的改变而改变
+弹性容器
+要使用弹性盒，必须先将一个元素 设置为弹性容器
+我们通过display 来设置弹性容器
+display:flex设置为块级弹 性容器
+display:inline- flex设置为行内的弹性容器
+弹性元素
+弹性容器的子元素是弹性元素(弹性项)
+一个元素可以同时是弹性容器和弹性元素
+-->
+
+<!--
+flex-direction指定容器中弹性元素的排列方式
+可选值:
+row 默认值，弹性元素在容器中水平排列(左向右)
+row-reverse 弹性元素在容器中反向水平排列(右向左)
+column 弹性元索纵向排列(自上向下)
+column-reverse 弹性元素方向纵向排列(自下向上)
+
+主轴:
+弹性 元素的排列方向称为主轴
+侧轴
+与主轴垂直方向的称为侧轴
+-->
+
+<!--
+弹性元素的属性:
+flex-grow指定弹性元素的伸展的系数
+当父元素有多余空间的时，子元素如何伸展
+父元素的剩余空间，会按照比例进行分配
+flex-shrink指定弹性元素的收缩系数
+-当父元素中的空间不足以容纳所有的子元素时，如果对子元素进行收缩
+-->

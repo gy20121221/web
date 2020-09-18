@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时钟</title>
+    <style>
+     .box1{
+         width: 500px;
+         height: 500px;
+         margin: 100px auto 0;
+         border-radius: 50%;
+         border: #999999 solid 6px;
+         position: relative;
+         background-image: url("img/time.jpg");
+         background-size: cover;/*填充*/
+     }
+     /*居中*/
+     .box1>div{
+         position: absolute;
+         right: 0;
+         left: 0;
+         top: 0;
+         bottom: 0;
+         margin:  auto;
+     }
+     .time-h{
+         height: 60%;
+         width: 60%;
+         animation: s 43200s;
+         }
+     .time-hm{
+         height: 50%;
+         width: 6px;
+         background-color: black;
+         margin: 0 auto;
+     }
+     .time-f{
+         height: 80%;
+         width: 80%;
+         animation: s 3600s;
+     }
+     .time-fm{
+         height: 50%;
+         width: 4px;
+         background-color: black;
+         margin: 0 auto;
+     }
+     .time-s{
+         height: 95%;
+         width: 95%;
+         animation: s 60s steps(60);
+     }
+     .time-sm{
+         height: 50%;
+         width: 2px;
+         background-color: red;
+         margin: 0 auto;
+     }
+     @keyframes s {
+         from{
+             transform: rotateZ(0);
+         }
+         to{
+             transform: rotateZ(360deg);
+         }
+     }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="time-h">
+        <div class="time-hm"></div>
+    </div>
+    <div class="time-f">
+        <div class="time-fm"></div>
+    </div>
+    <div class="time-s">
+        <div class="time-sm"></div>
+    </div>
+</div>
+</body>
+</html>

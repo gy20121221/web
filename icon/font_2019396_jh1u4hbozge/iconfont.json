@@ -1,0 +1,23 @@
+{
+  "id": "2019396",
+  "name": "icon",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11474219",
+      "name": "all",
+      "font_class": "all",
+      "unicode": "e6ef",
+      "unicode_decimal": 59119
+    },
+    {
+      "icon_id": "11474243",
+      "name": "copy",
+      "font_class": "copy",
+      "unicode": "e6f3",
+      "unicode_decimal": 59123
+    }
+  ]
+}

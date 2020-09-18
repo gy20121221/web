@@ -1,0 +1,17 @@
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: #3F3F3F;
+}
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+.box2 .box3 {
+  width: 200px;
+  height: 200px;
+  background: url(../img/1.jpg) center;
+  background-size: cover;
+  z-index: 10;
+}

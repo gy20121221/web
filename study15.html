@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东图片布局</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .mi{
+            height: 470px;
+            width: 590px;
+            margin: 50px auto;
+        }
+        .mi li{
+            position: absolute;
+        }
+        .mi img{
+            height: 470px;
+            width: 590px;
+        }
+        .mi li:nth-child(2){
+            z-index: 1;
+        }/*选择器，按顺序123.。。选择显示图片*/
+        .pont{
+            float: left;
+            width: 113px;
+            height: 15px;
+            position: relative;
+            top: 440px;
+            left: 30px;
+            z-index: 10;
+        }
+        .pont a{
+            float: left;
+            width: 8px;
+            height: 8px;
+            background-color: rgb(221, 221, 221,0.5);
+            border-radius: 50%;
+            margin-left: 4px;
+            border: 1px solid transparent;
+        }
+        .pont a:hover{
+            background-color: white;
+            border: 1px solid rgb(221, 221, 221,0.5);
+        }
+    </style>
+</head>
+<body>
+<div class="mi">
+    <ul>
+        <li><a href="https://www.jd.com/"><img src="img/a/1.jpg" alt=""></a></li>
+        <li><a href="https://www.jd.com/"><img src="img/a/2.jpg" alt=""></a></li>
+        <li><a href="https://www.jd.com/"><img src="img/a/3.jpg" alt=""></a></li>
+        <li><a href="https://www.jd.com/"><img src="img/a/4.jpg" alt=""></a></li>
+        <li><a href="https://www.jd.com/"><img src="img/a/5.jpg" alt=""></a></li>
+        <li><a href="https://www.jd.com/"><img src="img/a/6.jpg" alt=""></a></li>
+        <li><a href="https://www.jd.com/"><img src="img/a/7.jpg" alt=""></a></li>
+        <li><a href="https://www.jd.com/"><img src="img/a/8.jpg" alt=""></a></li>
+    </ul>
+    <div class="pont">
+        <a href="java:;"></a>
+        <a href="java:;"></a>
+        <a href="java:;"></a>
+        <a href="java:;"></a>
+        <a href="java:;"></a>
+        <a href="java:;"></a>
+        <a href="java:;"></a>
+        <a href="java:;"></a>
+    </div>
+</div>
+</body>
+</html>
+<!--
+网页未完全完成，缺少部分js内容，
+-->

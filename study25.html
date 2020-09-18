@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡，动画</title>
+    <style>
+        .box1{
+            height: 235px;
+            width: 115.5px;
+            background-image: url("img/8.png");
+            background-position:  -1px -1px;
+            transition: 0.1s steps(3);
+        }
+        .box1:hover{
+            background-position: -462px 0;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            animation-name: box-2;/*标记名字*/
+            animation-duration: 2s;/*设置时间*/
+            animation-delay: 1s;/*设置延迟*/
+            animation-iteration-count: infinite;/*设置执行次数，infinite是无限次*/
+            animation-direction: normal;/*设置动画执行方向*/
+        }
+
+        @keyframes box-2 {
+            /*动画开始位置*/from{
+            margin-left: 0;
+            }
+            /*动画结束位置*/to{
+            margin-left: 100%;
+            }
+        }
+        .box3{
+            height: 89px;
+            width: 70px;
+            margin: 0 auto;
+            background-image: url("img/9.png");
+            animation: run 0.5s steps(4) infinite;
+        }
+        @keyframes run {
+            from{
+                background-position: 0 0;
+            }
+            to{
+                background-position: -280px 0;
+            }
+        }
+        .box4{
+            height: 500px;
+            border-bottom: 10px black solid;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+        .box4-1{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #999999;
+            margin: 0 auto;
+            animation: ball  2s infinite;
+        }
+        @keyframes ball {
+            from{
+                margin-top: 0;
+            }
+            50%{
+                margin-top: 200px;
+            }
+            to{
+                margin-top: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="box4">
+    <div class="box4-1"></div>
+</div>
+</body>
+</html>
+<!--/*动画
+动画和过渡类似，都是可以实现一些动态的效果,
+不同的是过渡需要在某个属性发生变化时才会触发
+动画可以自动触发动态效果
+设置动画效果，必须先要设置一个关键帧， 关键帧设置了动画执行每 一个步骤
+*/-->
+
+
+<!--
+/*animation-direction
+指定动画运行的方向
+可选值:
+norma 1
+默认值从from向to运行每次都是这样
+reverse从to向from 运行每次都是这样
+alternate从from 向to运行重复执行动画时反向执行
+alternate-reverse从to向from运行重复执行动画时反向执行
+-->
+
+<!--
+animation-play-state:设置动画的执行状态
+可选值:
+running默认值动画执行
+paused动画暂停
+*/-->
+
+<!--
+animation- fill -mode:动画的填充模式
+可选值:
+none
+默认值动画执行完毕元素回到原来位置
+forwards动画执行完毕元素会停止在动画结束的位置
+backwards动画延时等待时，元素就会处于开始位置
+-->

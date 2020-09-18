@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jd导航条</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="icon/font_2019396_c7g20vjgubu/iconfont.css">
+    <style>
+        .head{
+            height: 31px;
+            line-height: 31px;/*行高居中，可以让后面的字体居中*/
+            background-color:rgb(227, 228, 229) ;
+            margin-top: 20px;
+            font-size: 12px;
+            border: 1px solid #d9d9d9;
+        }
+        .city-list{
+            display: none;/*初始隐藏*/
+            width: 322px;
+            height: 464px;
+            background-color: white;
+            border: 1px solid #999999;
+            position: absolute;
+            box-shadow: 0 2px 2px rgb(136, 136, 136);/*设置阴影*/
+        }
+        .head-im-ld{
+            height: 30px;
+            width: 58px;
+            float: left;
+        }
+        .head-im-ld:hover{
+            background-color: white;
+        }
+        .head-im{
+            height: 30px;
+            width: 1190px;
+            margin: 1px  auto;
+        }
+        .head-im a{
+            text-decoration: none;
+            color: #999999;
+        }
+        .head-im a:hover{
+            color: #ef475d;
+        }
+        .head-im-l{
+            width: 58px;
+            height: 30px;
+            float: left;
+        }
+        .head-im-ri{
+            height: 30px;
+            width: 719px;
+            float: right;
+            color: #999999;
+        }
+        .head-im-ri li{
+            float: left;
+        }
+        .sp{
+            color: #999999;
+            margin: 0 14px;
+        }
+        .head-im-l:hover .city-list{
+             display: block;
+         }/*下拉框 这样设置可以让下拉框在浏览时不消失*/
+    </style>
+</head>
+<body>
+<div class="head">
+    <div class="head-im">
+        <div class="head-im-ld">
+        <ul class="head-im-l">
+            <a href="https://www.jd.com/">
+               <i class="iconfont icon-location" style="color: red"></i> 湖南
+            </a>
+            <div class="city-list"></div>
+        </ul></div>
+        <ul class="head-im-ri">
+            <li>
+                <a href="https://www.jd.com/"><span>你好，请登陆</span></a>
+                &nbsp;
+                <a href="https://www.jd.com/"><span>免费注册</span></a>
+            </li>
+            <li class="sp">|</li>
+            <li><a href="https://www.jd.com/">我的订单</a></li>
+            <li class="sp">|</li>
+            <li><a href="https://www.jd.com/">我的京东</a></li>
+            <li class="sp">|</li>
+            <li><a href="https://www.jd.com/">京东会员</a></li>
+            <li class="sp">|</li>
+            <li><a href="https://www.jd.com/">企业采购</a></li>
+            <li class="sp">|</li>
+            <li><a href="https://www.jd.com/"></a>客户服务</li>
+            <li class="sp">|</li>
+            <li><a href="https://www.jd.com/"></a>网站导航</li>
+            <li class="sp">|</li>
+            <li><a href="https://www.jd.com/"></a>手机京东</li>
+            <li class="sp">|</li>
+        </ul>
+    </div>
+</div>
+</div>
+</body>
+</html>
