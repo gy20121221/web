@@ -5,6 +5,39 @@ document.writeln(temp);
 document.writeln(decodeURI(temp));//解码
 */
 
+/*var a=new Object();
+ a.name="aost";
+ a.age=18;
+ document.write(a.name);
+ document.write(a.age);
+ //对象创建*/
+
+
+/*var a={};
+a["qwq"]=123;
+document.writeln(a["qwq"]);
+//对象第二种创建方法*/
+
+
+/*
+var a={};
+var b=a;
+a.name="qwq";
+document.writeln(a.name);
+document.writeln(b.name);
+a.name="www";
+document.writeln(a.name);
+document.writeln(b.name);
+var q=12;
+var w=q;
+document.writeln(q);
+q=1;
+document.writeln(q);
+document.writeln(w);
+//对象引用的是地址，所以改变a.name会改变b.name的值，主要是堆栈之间的调用，
+//基本数据类型只调用了栈，故改变q后对w没有影响
+//比较2个引用数据类型时，比较的是地址
+*/
 
 
 /*
