@@ -61,7 +61,7 @@ NaN (Not A Number, -一个数字类型的标识，表示不是一个正确的数
 /*
 function getSum(a,b){
     return a+b;
-}
+}//函数对象
 function getSum(a,b,c){
     return a+b+c;
 }
@@ -86,7 +86,7 @@ JavaScript函数若同名，则不存在方法重载，只有方法相互覆盖�
 function Peron(){
     this.name="小飞";
     this.age=20;
-}
+}//this相当于父元素
 var a =new Peron();
 document.writeln(a.name);
 document.writeln(a.age);
@@ -96,4 +96,7 @@ document.writeln(a.age);
 
 /*var per={name:"小飞",age:"20"};
 document.writeln(per.age+per.name);*/
+
+
+/*(function (){document.writeln('hello')})();//匿名函数，会立即执行*/
 
