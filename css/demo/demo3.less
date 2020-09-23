@@ -1,0 +1,141 @@
+@m-width:750;
+.w{
+  width: 693/40rem;
+  margin: 0 auto;
+}
+a{
+  color: #3F3F3F;
+  text-decoration: none;
+}
+
+//设置根元素
+html{
+  font-size: 100vw/@m-width*40;
+  background-color: #eff0f4;
+  box-sizing: border-box;
+}
+header{
+  height: 168/40rem;
+  padding: 0 24/40rem;
+  border-bottom: 1/40rem solid #aaa;
+  .header-top{
+    width: 100%;
+    height: 88/40rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    .header-l{
+      height: 100%;
+      width: 124/40rem;
+      img{
+        position: absolute;
+        width: 124/40rem;
+        left: 0;
+        top: 20/40rem;
+      }
+    }
+    .header-r{
+      position: absolute;
+      height: 100%;
+      width: 340/40rem;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i{
+        color:#ccc;
+        font-size: 1.2rem;
+        margin-right: 40/40rem;
+      }
+      img{
+        width: 48/40rem;
+        height: 48/40rem;
+        border-radius: 50%;
+        margin-right: 40/40rem;
+      }
+      button{
+        background: #fb7299;
+        border: 0;
+        border-radius: 1vw;
+        color: #fff;
+        padding: 10/40rem 20/40rem;
+      }
+    }
+  }
+  .header-navi{
+    width: 100vw;
+    height: 80/40rem;
+    display: flex;
+    font-size: 4vw;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: -30/40rem;
+
+    .put{
+      display: inline-block;
+      width: 40/40rem;
+      height: 40/40rem;
+      line-height: 40/40rem;
+      padding: 10/40rem;
+      position: absolute;
+      color: #ccc;
+      background:#eff0f4;
+      right: 0;
+    }
+  }
+}
+main{
+  .main-top{
+    margin-top: 20/40rem;
+    padding: 0 20/40rem;
+    img{
+      width: 100%;
+    }
+  }
+  .main-m{
+    margin-top: 20/40rem;
+    padding: 0 20/40rem;
+    .main-o{
+      width: 100%;
+      height: 300/40rem;
+      position: relative;
+      .main-w1,.main-w2{
+        position: absolute;
+        width: 46vw;
+        img{
+          width: 100%;
+        }
+      }
+      .main-w2{
+        right: 0;
+      }
+      p{
+        font-size: 14px;
+        line-height: 40/40rem;
+        //margin: 10/40rem 0;
+      }
+    }
+  }
+}
+.flex-b{
+  width: 93vw;
+  height: 80/40rem;
+  line-height: 80/40rem;
+  background-color: #fb7299;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 60/40rem;
+  z-index: 10;
+  border-radius: 6.6vw;
+  img{
+    width: 75/40rem;
+  }
+  span{
+    color:#eff0f4;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,137 @@
+.w {
+  width: 17.325rem;
+  margin: 0 auto;
+}
+a {
+  color: #3F3F3F;
+  text-decoration: none;
+}
+html {
+  font-size: 5.33333333vw;
+  background-color: #eff0f4;
+  box-sizing: border-box;
+}
+header {
+  height: 4.2rem;
+  padding: 0 0.6rem;
+  border-bottom: 0.025rem solid #aaa;
+}
+header .header-top {
+  width: 100%;
+  height: 2.2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+header .header-top .header-l {
+  height: 100%;
+  width: 3.1rem;
+}
+header .header-top .header-l img {
+  position: absolute;
+  width: 3.1rem;
+  left: 0;
+  top: 0.5rem;
+}
+header .header-top .header-r {
+  position: absolute;
+  height: 100%;
+  width: 8.5rem;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-top .header-r i {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+header .header-top .header-r img {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+header .header-top .header-r button {
+  background: #fb7299;
+  border: 0;
+  border-radius: 1vw;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+}
+header .header-navi {
+  width: 100vw;
+  height: 2rem;
+  display: flex;
+  font-size: 4vw;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  left: -0.75rem;
+}
+header .header-navi .put {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  padding: 0.25rem;
+  position: absolute;
+  color: #ccc;
+  background: #eff0f4;
+  right: 0;
+}
+main .main-top {
+  margin-top: 0.5rem;
+  padding: 0 0.5rem;
+}
+main .main-top img {
+  width: 100%;
+}
+main .main-m {
+  margin-top: 0.5rem;
+  padding: 0 0.5rem;
+}
+main .main-m .main-o {
+  width: 100%;
+  height: 7.5rem;
+  position: relative;
+}
+main .main-m .main-o .main-w1,
+main .main-m .main-o .main-w2 {
+  position: absolute;
+  width: 46vw;
+}
+main .main-m .main-o .main-w1 img,
+main .main-m .main-o .main-w2 img {
+  width: 100%;
+}
+main .main-m .main-o .main-w2 {
+  right: 0;
+}
+main .main-m .main-o p {
+  font-size: 14px;
+  line-height: 1rem;
+}
+.flex-b {
+  width: 93vw;
+  height: 2rem;
+  line-height: 2rem;
+  background-color: #fb7299;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 1.5rem;
+  z-index: 10;
+  border-radius: 6.6vw;
+}
+.flex-b img {
+  width: 1.875rem;
+}
+.flex-b span {
+  color: #eff0f4;
+  font-size: 14px;
+}
+/*# sourceMappingURL=demo3.css.map */
