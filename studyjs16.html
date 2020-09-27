@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>删除数组相同多余元素</title>
+</head>
+<body>
+<script>
+    var arr=[1,1,2,1,2,3,4,5,4,4,5]
+
+
+    //方法一
+    function comArr(arr, a){
+        for (var i=0;i<arr.length;i++){
+            if (arr[i]===a) return true;
+        }
+    }
+    function chaArr(arr){
+        var arr1=[arr[0]];
+        var arr2=[];
+        for (var i=1,j=1,q=0;i<arr.length;i++)
+        {
+            if(comArr(arr2,arr[i])) ;
+            else if (comArr(arr1,arr[i])) arr2[q++]=arr[i];
+            else arr1[j++]=arr[i];
+        }
+        return arr1;
+    }//不会改变原数组
+    document.writeln(chaArr(arr));
+    // document.writeln(chaArr(arr).length);
+
+    //方法二
+    function chaArr2(arr){
+        for (var i=0;i<arr.length;i++){
+            for (var j=i+1;j<arr.length;j++){
+                if(arr[i]===arr[j]) {
+                    arr.splice(j,1);
+                    j--;
+                }
+            }
+        }
+    }//会改变原数组
+    chaArr2(arr);
+     document.writeln(arr);
+</script>
+</body>
+</html>

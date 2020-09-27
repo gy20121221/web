@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>数组</title>
+</head>
+<body>
+<script>
+    var arr=[];
+    arr[0]=12;
+    arr[1]=20;
+    document.writeln(arr[0]+"@");
+    var arr1=[12,55,4,2];
+    document.writeln(arr1+"@");
+   arr1.push("zzp");/*向末尾添加，并且会返回添加后的长度*/
+    document.writeln(arr1+"@");
+    arr1.pop();/*删除最后一个元素,并且返回删除的值*/
+    document.writeln(arr1+"@");
+    arr1.unshift("szr");/*向前面添加元素，并且返回添加后的长度*/
+    document.writeln(arr1+"@");
+</script>
+</body>
+</html>
+<!--
+push()  向末尾添加，并且会返回添加后的长度
+pop()    删除最后一个元素,并且返回删除的值
+unshift()   向前面添加元素，并且返回添加后的长度
+shift    删除前面第一个元素,并且返回删除的值
+-->
