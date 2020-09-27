@@ -22,8 +22,8 @@ let obj={
 
 var name;
 var age;
-let obj= {
-    name: "zzp",
+var obj= {
+    name: "szr",
     age: 20,
     get: function () {
         document.writeln(this.name + this.age);
