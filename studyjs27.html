@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>选择练习</title>
+    <script>
+        window.onload=function (){
+
+            let checkAll=document.getElementById("checkedAllBtn");
+            let intrms=document.getElementsByName("items");
+            let checkNo=document.getElementById("checkedNoBtn");
+            let checkR=document.getElementById("checkedRevBtn");
+            let send=document.getElementById("sendBtn");
+
+            /*全选，取消全选*/
+            let check=document.getElementById("checkedAllBox");
+            let spanC=document.getElementById("check");
+            check.onclick=function (){
+                if (check.checked) {
+                    for (let i = 0; i < intrms.length; i++) {
+                        intrms[i].checked=true;
+                        spanC.innerText="取消全选";
+                    }
+                }
+                else {
+                    for (let i = 0; i < intrms.length; i++) {
+                        intrms[i].checked=false;
+                        spanC.innerText="全选";
+                    }
+                }
+            }
+
+            /*上面的函数封装*/
+            function che(){
+                        for (let j = 0; j < intrms.length; j++) {
+                            if (!intrms[j].checked){
+                                check.checked=false;
+                                spanC.innerText="全选";
+                                break;
+                            }
+                            else {
+                                check.checked=true;
+                                spanC.innerText="取消全选";
+                            }
+                        }
+            }
+            for (let i = 0; i < intrms.length; i++) {
+                intrms[i].onclick=function (){
+                    for (let j = 0; j < intrms.length; j++) {
+                        if (!intrms[j].checked){
+                            check.checked=false;
+                            spanC.innerText="全选";
+                            break;
+                        }
+                        else {
+                            check.checked=true;
+                            spanC.innerText="取消全选";
+                        }
+                    }
+                }
+            }
+
+
+            /*全选按钮*/
+            checkAll.onclick=function (){
+                for (let i = 0; i < intrms.length; i++) {
+                    intrms[i].checked=true;
+                }
+                che();
+            };
+
+            /*全不选*/
+            checkNo.onclick=function (){
+                for (let i = 0; i < intrms.length; i++) {
+                    intrms[i].checked=false;
+                }
+                che();
+            };
+
+            /*反选*/
+            checkR.onclick=function (){
+                for (let i = 0; i < intrms.length; i++) {
+                    intrms[i].checked = !intrms[i].checked;
+                }
+                che();
+            };
+
+            /*提交，弹出*/
+            send.onclick=function (){
+                for (let i = 0; i < intrms.length; i++) {
+                    if (intrms[i].checked) alert(intrms[i].value);
+                }
+            }
+
+
+
+        }
+    </script>
+</head>
+<body>
+<form method="post" action="">
+    你爱好的运动是？<input type="checkbox" id="checkedAllBox" />
+    <span id="check">全选</span>
+    <br />
+    <input type="checkbox" name="items" value="足球" />足球
+    <input type="checkbox" name="items" value="篮球" />篮球
+    <input type="checkbox" name="items" value="羽毛球" />羽毛球
+    <input type="checkbox" name="items" value="乒乓球" />乒乓球
+    <br />
+    <input type="button" id="checkedAllBtn" value="全　选" />
+    <input type="button" id="checkedNoBtn" value="全不选" />
+    <input type="button" id="checkedRevBtn" value="反　选" />
+    <input type="button" id="sendBtn" value="提　交" />
+</form>
+</body>
+</html>

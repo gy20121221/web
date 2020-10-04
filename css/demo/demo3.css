@@ -124,6 +124,7 @@ main .main-m .main-o p {
   align-items: center;
   position: fixed;
   bottom: 1.5rem;
+  left: 3.5vw;
   z-index: 10;
   border-radius: 6.6vw;
 }

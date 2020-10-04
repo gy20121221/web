@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM练习 图片切换</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        img{
+            height: 200px;
+        }
+        button{
+            background: #ef475d;
+        }
+    </style>
+    <script>
+        window.onload=function (){
+            let prev=document.getElementById("prev");
+            let next=document.getElementById("next");
+            let arr=["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg"];
+            let img=document.getElementsByTagName("img")[0];
+            let span=document.getElementsByTagName("span")[0];
+            let v=0;
+            prev.onclick=function (){
+                v--;
+                if(v<0){
+                    img.src=arr[arr.length-1];
+                    v=arr.length-1;
+                }
+                else {
+                    img.src=arr[v];
+                }
+                span.innerHTML=("第"+(v+1)+"张");
+                console.log(img.src);
+            }
+            next.onclick=function (){
+                v++;
+                if(v>arr.length-1){
+                    img.src=arr[0];
+                    v=0;
+                }
+                else {
+                    img.src=arr[v];
+                }
+                span.innerHTML=("第"+(v+1)+"张");
+                console.log(img.src);
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+<div id="img">
+    <span>第1张</span>
+    <img src="img/1.jpg" alt="1">
+    <button id="prev">上一张</button>
+    <button id="next">下一张</button>
+</div>
+</body>
+</html>

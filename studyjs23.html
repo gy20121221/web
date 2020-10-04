@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式 手机号正则表达式 电子邮件正则表达式</title>
+</head>
+<body>
+<script>
+    let reg=/a{3}/;
+    let reg1=/ab{1,3}c/;
+    console.log(reg.test("aaaaasdas5"));
+    console.log(reg1.test("abbc"));
+    let reg2=/ab+c/;
+    console.log(reg2.test("adacabcc"));
+    let reg3=/ab*c/;
+    let reg4=/ab?(cc)/;
+    console.log(reg3.test("abccc"));
+    console.log(reg4.test("abc"));
+    let reg5=/^a/;
+    console.log(reg5.test("dqasd"));
+    let reg6=/a$/;
+    console.log(reg6.test("aaaf"));
+    let reg7=/^a$/;
+    console.log(reg7.test("aaa"));
+    console.log(reg7.test("a"));
+    let num="13243687254";
+    let reg8=/^1[3-9][0-9]{9}$/;
+    console.log(reg8.test(num));
+    let reg9=/\./;
+    console.log(reg9.test("1628590697@qq.com"));
+    let srt="    l   bw   ";
+    console.log(srt.replace(/\s/g,""));
+    console.log(srt.replace(/^\s*|\s*$/g,""));
+    let qq="13243687254@168.com";
+    let reg10=/^\w+@\w+(\.com)$/;
+    console.log(reg10.test(qq));
+</script>
+</body>
+</html>
+
+<!--
+/*
+			 * 量词
+			 * 	- 通过量词可以设置一个内容出现的次数
+			 * 	- 量词只对它前边的一个内容起作用
+			 * 	- {n} 正好出现n次
+			 * 	- {m,n} 出现m-n次
+			 * 	- {m,} m次以上
+			 * 	- + 至少一个，相当于{1,}
+			 * 	- * 0个或多个，相当于{0,}
+			 * 	- ? 0个或1个，相当于{0,1}
+			 */
+			 -->
+<!--
+检查一个字符串中是否以a开头
+			 * 	^ 表示开头
+			 * 	$ 表示结尾
+
+-->
+
+
+<!--
+	         * \w
+			 * 	- 任意字母、数字、_  [A-z0-9_]
+			 * \W
+			 * 	- 除了字母、数字、_  [^A-z0-9_]
+			 * \d
+			 * 	- 任意的数字 [0-9]
+			 * \D
+			 * 	- 除了数字 [^0-9]
+			 * \s
+			 * 	- 空格
+			 * \S
+			 * 	- 除了空格
+			 * \b
+			 * 	- 单词边界
+			 * \B
+			 * 	- 除了单词边界
+			 */
+-->

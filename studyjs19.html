@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date Math</title>
+</head>
+<body>
+<script>
+let d1=new Date("11/7/2000 0:0:0");
+document.writeln(d1.getTime());
+document.writeln("@")
+let d2=Date.now();
+document.writeln(d2);
+
+document.writeln(Math.PI);
+</script>
+</body>
+</html>
+
+<!--
+ Date对象
+			 * 	- 在JS中使用Date对象来表示一个时间
+			 */
+
+			//创建一个Date对象
+			//如果直接使用构造函数创建一个Date对象，则会封装为当前代码执行的时间
+			var d = new Date();
+
+			//创建一个指定的时间对象
+			//需要在构造函数中传递一个表示时间的字符串作为参数
+			//日期的格式  月份/日/年 时:分:秒
+			-->
+
+<!--
+* Math
+			 * 	- Math和其他的对象不同，它不是一个构造函数，
+			 * 		它属于一个工具类不用创建对象，它里边封装了数学运算相关的属性和方法
+			 * 	- 比如
+			 * 		Math.PI 表示的圆周率
+			 */
+
+			//console.log(Math.PI);
+
+			/*
+			 * abs()可以用来计算一个数的绝对值
+			 */
+			//console.log(Math.abs(-1));
+
+			/*
+			 * Math.ceil()
+			 * 	- 可以对一个数进行向上取整，小数位只有有值就自动进1
+			 * Math.floor()
+			 * 	- 可以对一个数进行向下取整，小数部分会被舍掉
+			 * Math.round()
+			 * 	- 可以对一个数进行四舍五入取整
+			 */
+			//console.log(Math.ceil(1.1));
+			//console.log(Math.floor(1.99));
+			//console.log(Math.round(1.4));
+
+			/*
+			 * Math.random()
+			 * 	- 可以用来生成一个0-1之间的随机数
+			 *  - 生成一个0-10的随机数
+			 * 	- 生成一个0-x之间的随机数
+			 * 		Math.round(Math.random()*x)
+			 *
+			 * 	- 生成一个1-10
+			 * 	- 生成一个x-y之间的随机数
+			 * 		Math.round(Math.random()*(y-x)+x)
+			 */
+			/*for(var i=0 ; i<100 ; i++){
+				//console.log(Math.round(Math.random()*10));
+				//console.log(Math.round(Math.random()*20));
+
+				//console.log(Math.round(Math.random()*9)+1);
+				//console.log(Math.round(Math.random()*8)+2);
+
+				//生成1-6之间的随机数
+				console.log(Math.round(Math.random()*5+1));
+			}*/
+
+			/*
+			 * max() 可以获取多个数中的最大值
+			 * min() 可以获取多个数中的最小值
+			 */
+-->
+
+
