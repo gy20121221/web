@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>拖拽</title>
+    <style>
+        #box1{
+            width: 200px;
+            height: 200px;
+            background: #ef475d;
+            position: absolute;
+        }
+    </style>
+
+</head>
+<body>
+<div id="box1">hello</div>
+<script>
+    let box1=document.getElementById("box1");
+    box1.onmousedown=function (mo){
+        let xl=mo.clientX-box1.offsetLeft;
+        let yl=mo.clientY-box1.offsetTop;//解决鼠标在左上角，原理是减去元素自带的距离
+        //给document可以让其不管在哪都可以停下
+        document.onmousemove=function (mo){
+            box1.style.left=mo.clientX-xl+"px";
+            box1.style.top=mo.clientY-yl+"px";
+        }
+        document.onmouseup=function (){
+            document.onmousemove=null;
+            document.onmouseup=null;
+        }
+    }
+</script>
+</body>
+</html>
+
+<!--
+
+					 * 当我们拖拽一个网页中的内容时，浏览器会默认去搜索引擎中搜索内容，
+					 * 	此时会导致拖拽功能的异常，这个是浏览器提供的默认行为，
+					 * 	如果不希望发生这个行为，则可以通过return false来取消默认行为
+					 *
+					 * 但是这招对IE8不起作用
+-->
