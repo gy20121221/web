@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  /* 需要隐藏最外层不可见区域以使视差生效 */
+  overflow: hidden;/*核心*/
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  perspective: 50px;
+  transform-style: preserve-3d;
+  /* 3D的容器要允许overflow才能生效 */
+  overflow-y: auto;/*核心*/
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  .wi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;/*很重要，裁剪多余的部分*/
+    .bc{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transform: translateZ(-50px) scale(3.5);/*核心代码*/
+      z-index: -1;/*核心*/
+      img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+      &::before{
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease;
+        background-color: rgba(0, 0, 0, .4);
+      }
+
+    }
+    &:hover .bc::before{
+        background-color: rgba(0, 0, 0, .1);
+      }
+    .say{
+      font-family: 'Courier New', Courier, monospace;
+      color: #e2e1e4;
+      text-align: center;
+      h1{
+        font-weight: bold;
+        font-size: 26px;
+      }
+      p{
+        font-size: 16px;
+        line-height: 56px;
+      }
+    }
+  }
+
+/*
+object-fit:
+
+fill
+替换后的内容的大小可填充元素的内容框：对象的具体对象大小是元素使用的宽度和高度。
+contain
+替换后的内容的大小应保持其纵横比，同时适合元素的内容框：将其具体对象的大小解析为对元素使用的宽度和高度的包含约束。
+cover
+替换内容的大小可设置为在填充元素的整个内容框时保持其纵横比：将其具体对象的大小解析为对元素使用的宽度和高度的覆盖约束。
+none
+替换后的内容不会调整大小以适合元素的内容框：对象的具体对象大小是使用默认的大小调整算法确定的，没有指定大小，默认对象大小等于替换后的元素使用的宽度和高度。
+scale-down
+所述内容的尺寸，如同none或contain指定了，取将导致更小的具体对象的大小。
+*/
+
+/*
+flex-direction:
+
+row
+默认值。灵活的项目将水平显示，正如一一个行- -样。
+row-reverse
+与row相同，但是以相反的顺序。
+column
+灵活的项目将垂直显示，正如一个列一样。
+column-reverse
+与column相同，但是以相反的顺序。
+initial
+设置该属性为它的默认值。请参阅initial。
+inherit
+从父元素继承该属性。请参阅inherit.
+*/
