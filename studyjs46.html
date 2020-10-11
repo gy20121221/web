@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .wi{
+            width: 400px;
+            height: 400px;
+            margin: 100px 200px;
+            /*overflow: hidden;*/
+            border: 2px red solid;
+            position: absolute;
+        }
+        ul{
+            position: relative;
+            float: left;
+            height: 100%;
+            left: 0;
+        }
+        li{
+            display: inline-block;
+            width: 400px;
+            height: 400px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            /*object-fit: cover;*/
+        }
+        a{
+            float: left;
+            position: relative;
+            margin-left: 5px;
+            background: #ef475d;
+            width: 15px;
+            height: 15px;
+            left: 110px;
+            top: -40px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        a:hover{
+            background: #999999;
+        }
+    </style>
+    <script>
+        window.onload=function (){
+            let slid=document.getElementById("slid");
+            let slidImg=slid.getElementsByTagName("img");
+            slid.style.width=slidImg.length*410+"px";
+            let wi=document.querySelector(".wi");
+            let wiA=wi.getElementsByTagName("a");
+            let wiAPick=0;
+            wiA[wiAPick].style.background="#999999";
+
+    </script>
+</head>
+<body>
+<div class="wi">
+    <ul id="slid">
+        <li><img src="img/a/1.jpg" alt=""></li>
+        <li><img src="img/a/2.jpg" alt=""></li>
+        <li><img src="img/a/3.jpg" alt=""></li>
+        <li><img src="img/a/4.jpg" alt=""></li>
+        <li><img src="img/a/5.jpg" alt=""></li>
+        <li><img src="img/a/6.jpg" alt=""></li>
+        <li><img src="img/a/7.jpg" alt=""></li>
+        <li><img src="img/a/8.jpg" alt=""></li>
+    </ul>
+    <a href="javascript:"></a>
+    <a href="javascript:"></a>
+    <a href="javascript:"></a>
+    <a href="javascript:"></a>
+    <a href="javascript:"></a>
+    <a href="javascript:"></a>
+    <a href="javascript:"></a>
+    <a href="javascript:"></a>
+</div>
+</body>
+</html>
