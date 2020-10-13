@@ -1,0 +1,69 @@
+.wi{
+  width: 400px;
+  height: 320px;
+  margin: 50px auto;
+  position: relative;
+  button{
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    border: none;
+    outline: none;//去除点击后的样式
+    background: #999999;
+    opacity: 0.4;
+    z-index: 10;
+    &:hover{
+      background: #3F3F3F;
+      opacity: 0.8;
+    }
+  }
+  #pre{
+    left: 0;
+    top: 150px;
+  }
+  #next{
+    right: 0;
+    top: 150px;
+  }
+  .wi-a{
+    float: left;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    background: #3F3F3F;
+    z-index: 10;
+    margin-left: 5px;
+    border-radius: 50%;
+    bottom: 30px;
+    left: 120px;
+    &:hover{
+    width: 10px;
+    height: 10px;
+    border: 1px #999999 solid;
+  }
+  }
+  .aJ{
+    background: #f5f2f0;
+    width: 10px;
+    height: 10px;
+    border: 1px #999999 solid;
+  }
+}
+.img-top{
+  z-index: 10;
+}
+.wi-ul{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wi-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,70 @@
+.wi {
+  width: 400px;
+  height: 320px;
+  margin: 50px auto;
+  position: relative;
+}
+.wi button {
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: #999999;
+  opacity: 0.4;
+  z-index: 10;
+}
+.wi button:hover {
+  background: #3F3F3F;
+  opacity: 0.8;
+}
+.wi #pre {
+  left: 0;
+  top: 150px;
+}
+.wi #next {
+  right: 0;
+  top: 150px;
+}
+.wi .wi-a {
+  float: left;
+  width: 12px;
+  height: 12px;
+  position: relative;
+  background: #3F3F3F;
+  z-index: 10;
+  margin-left: 5px;
+  border-radius: 50%;
+  bottom: 30px;
+  left: 120px;
+}
+.wi .wi-a:hover {
+  width: 10px;
+  height: 10px;
+  border: 1px #999999 solid;
+}
+.wi .aJ {
+  background: #f5f2f0;
+  width: 10px;
+  height: 10px;
+  border: 1px #999999 solid;
+}
+.img-top {
+  z-index: 10;
+}
+.wi-ul {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wi-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+.wi-img img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=demo5.css.map */
