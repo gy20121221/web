@@ -50,7 +50,7 @@ window.onload=function (){
     let  star=setInterval(function (){
         pand();
         change(wiImg,"wi-img","wi-img img-top");
-    },2000);//计时器，改变图片显示
+    },3000);//计时器，改变图片显示
     pre.onclick=function (){
         if (index===0) {
             index=wiImg.length-1;
