@@ -1,0 +1,49 @@
+        <!DOCTYPE html>
+        <html lang="zh">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+        <div id="app">
+            {{ message +"!" }}
+        </div>
+        <h2>{{ message }}</h2>
+        <h3 id="a" v-text="message"></h3>
+        <h4 @click="sh">{{message}}</h4>
+            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+            <script>
+                var app = new Vue({
+                    el: '#app',
+                    data: {
+                        message: 'Hello Vue!'
+                    }
+                })
+                var app1 = new Vue({
+                    el: '#a',
+                    data: {
+                        message: 'Hello Vue!'
+                    }
+                })
+                var app2 = new Vue({
+                    el: 'h2',
+                    data: {
+                        message: 'Hello Vue!'
+                    }
+                })
+                var app3 = new Vue({
+                    el: 'h4',
+                    data: {
+                        message: 'Hello Vue!'
+                    },
+                    methods:{
+                        sh:function () {
+                            this.message+="qwq";
+                        }
+                    }
+                })
+            </script>
+        </body>
+        </html>
