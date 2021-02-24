@@ -2,11 +2,14 @@
   box-sizing: border-box;
 }
 html {
+
+}
+.bm{
   /* 需要隐藏最外层不可见区域以使视差生效 */
   overflow: hidden;
   /*核心*/
 }
-body {
+.m {
   width: 100vw;
   height: 100vh;
   perspective: 50px;
