@@ -456,7 +456,7 @@
         methods: {
             // 搜索歌曲
             searchMusic() {
-                if (this.query == 0) {
+                if (this.query === 0) {
                     return
                 }
                 axios.get('/search?keywords=' + this.query).then(response => {
